@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @Hemarajjoshi
-- 👀 I’m interested in web devlopment 
+- 👀 I’m interested in Python Development and Data Science.
 - 🌱 I’m currently learning Python
 - 📫  you can contact to my email hemrajjoshi3211@gmail.com
 
