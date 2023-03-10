@@ -15,6 +15,13 @@ class Bank:
             print("Please enter your name carefully.Your name isn't changed.Try again")
     def get_balance(self):
         return self.__balance
+    def get_account_number(self):
+        return self.__account_number
+    def set_account_number(self,new):
+        if isinstance(new,int):
+            self.__account_number = new
+        else:
+            print("Invalid account number.")
     def deposit(self,amount):
         if isinstance(amount,int):
             self.__balance = self.__balance +amount
