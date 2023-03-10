@@ -1,0 +1,35 @@
+class Bank:
+    def __init__(self,name,account_number,balance):
+        self.__name = name 
+        self.__account_number = account_number
+        self.__balance = balance
+    def __str__(self):
+        print(f"Welcome to the World Bank{self.__name}.Your account number is{self.__account_number}")
+    def get_name(self):
+        return self.__name
+    def set_name(self,new_name):
+        if isinstance(new_name,str):
+            self.__name = new_name
+            print(f'Your name changed successfully to {self.__name}')
+        else:
+            print("Please enter your name carefully.Your name isn't changed.Try again")
+    def get_balance(self):
+        return self.__balance
+    def deposit(self,amount):
+        if isinstance(amount,int):
+            self.__balance = self.__balance +amount
+            print(f'Your amount is succesfully deposited and your new balance is {self.__balance}')
+        else:
+            print("Enter the valid amount")
+    def withdraw(self,amount):
+        if isinstance(amount,int):
+            self.__balance -= amount
+            print(f"{amount} has been succesfully withdrawan. Your new balance is {self.__balance}")
+        else:
+            print(f"Invalid amount")
+user1 = Bank('Hemraj',12345,0)
+user1.deposit(10000)
+user1.deposit(20000)
+print(user1.get_balance())
+user1.withdraw(30000)
+print(user1.get_balance())
